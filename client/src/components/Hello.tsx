@@ -12,7 +12,8 @@ export const HelloWorld: React.FC<HelloProps> = ({ compiler, framework }: HelloP
 
     React.useEffect(() => {
         const fetchItens = async (): Promise<void> => {
-            const apiUrl = `${process.env.API_URL}:${process.env.API_PORT}${process.env.API_VERSION}`;
+            const apiUrl = "http://localhost:8081/api/v1";
+            // const apiUrl = `${process.env.API_URL}:${process.env.API_PORT}${process.env.API_VERSION}`;
             const result = await fetch(`${apiUrl}/hello-world`);
             const msg = await result.json();
 

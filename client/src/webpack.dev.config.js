@@ -32,7 +32,7 @@ module.exports = {
         new Dotenv({
             path: path.resolve(process.cwd(), '../../.env'),
             systemvars: true,
-        }),
+        })
     ],
     node: {
         fs: 'empty',

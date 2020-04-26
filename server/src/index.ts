@@ -1,6 +1,6 @@
 import expressApp from './server';
 
-const PORT = process.env.API_PORT ?? 8080;
+const PORT = process.env.API_PORT ?? 8081;
 const app = expressApp();
 
 // Iniciamos o nosso servidor web
