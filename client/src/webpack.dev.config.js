@@ -8,6 +8,9 @@ const path = require('path');
 module.exports = {
     devtool: 'eval-cheap-module-source-map',
     entry: path.resolve(__dirname) + '/index.tsx',
+    devServer: {
+        liveReload: false
+    },
     module: {
         rules: [
             {
