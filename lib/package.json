@@ -16,5 +16,8 @@
     "prettier": "^2.0.5",
     "ts-jest": "^25.4.0",
     "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "start":  "tsc --build -w"
   }
 }
