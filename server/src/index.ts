@@ -1,3 +1,9 @@
-import Foo from 'lib';
+import expressApp from './server';
 
-console.log(Foo())
+const PORT = process.env.API_PORT ?? 8080;
+const app = expressApp();
+
+// Iniciamos o nosso servidor web
+app.listen(PORT, () => {
+    console.log(`Server escutando na porta ${PORT}`);
+});
