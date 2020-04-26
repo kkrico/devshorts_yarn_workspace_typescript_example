@@ -2,12 +2,13 @@
   "private": true,
   "workspaces": [
     "server",
-    "lib"
+    "lib",
+    "client"
   ],
   "name": "yarn_workplace",
   "version": "1.0.0",
   "scripts": {
-    "start":"yarn workspace lib start",
+    "start":"yarn workspace client start",
     "compile": "tsc --build --force tsconfig.json",
     "clean": "rm -rf server/dist lib/dist"
   },
@@ -15,6 +16,7 @@
   "author": "a1300 <https://github.com/a1300>",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "concurrently": "^5.1.0"
   }
 }
