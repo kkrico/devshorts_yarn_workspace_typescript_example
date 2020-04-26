@@ -2,9 +2,9 @@
   "private": true,
   "main": "dist/index",
   "types": "dist/index",
-  "name": "cmd",
+  "name": "server",
   "version": "1.0.0",
   "dependencies": {
-    "client": "1.0.0"
+    "lib": "1.0.0"
   }
 }
