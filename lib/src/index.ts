@@ -1,3 +1,3 @@
 export default function Foo() {
-  return 'Nice';
+  return 'Alterado mensagem';
 }

@@ -8,7 +8,7 @@
   "name": "yarn_workplace",
   "version": "1.0.0",
   "scripts": {
-    "start":"concurrently 'yarn workspace lib start' 'yarn workspace client start' 'yarn workspace server start'",
+    "start":"yarn workspace lib start && concurrently 'yarn workspace lib start' 'yarn workspace client start' 'yarn workspace server start'",
     "compile": "tsc --build --force tsconfig.json",
     "clean": "rm -rf server/dist lib/dist"
   },

@@ -17,7 +17,7 @@ export const HelloWorld: React.FC<HelloProps> = ({ compiler, framework }: HelloP
             const result = await fetch(`${apiUrl}/hello-world`);
             const msg = await result.json();
 
-            setMessage("msg");
+            setMessage(msg);
         };
 
         fetchItens();
