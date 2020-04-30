@@ -1,3 +1,4 @@
+import "lib";
 import expressApp from './server';
 
 const PORT = process.env.API_PORT ?? 8081;

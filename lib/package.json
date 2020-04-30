@@ -18,6 +18,9 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "start":  "tsc --build -w"
+    "start": "tsc --build -w"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
   }
 }
